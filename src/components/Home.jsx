@@ -32,12 +32,13 @@ export const Home = () => {
         onChange={(e) => {
           setInput(e.target.value);
         }}
-        input={input}
-        setTodos={setTodos}
+       
+
+        
       />
       <button
         onClick={(e) => {
-          setTodos([...todos,[Math.random(),input]]);
+          setTodos([...todos,input]);
         }}
       >
         Add
